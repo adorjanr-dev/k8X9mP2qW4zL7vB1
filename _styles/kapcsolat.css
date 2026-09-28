@@ -58,6 +58,7 @@ section { margin-top: 4.25rem; }
   .adatkez {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     input { accent-color: var(--primary-400); }
     label { color: var(--neutral-300); }
