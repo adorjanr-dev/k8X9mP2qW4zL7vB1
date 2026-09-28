@@ -55,15 +55,16 @@ section { margin-top: 4.25rem; }
     min-height: 5lh;
   }
 
+  .row { display: grid; gap: 16px; }
+
   .adatkez {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    input { accent-color: var(--primary-400); }
+    input { margin: 0; accent-color: var(--primary-400); height: 50px; }
     label { color: var(--neutral-300); }
   }
-
   button { max-width: max-content; }
 }
 
@@ -73,8 +74,6 @@ section { margin-top: 4.25rem; }
     iframe { align-self: stretch; max-height: 21.525rem; }
   }
   #urlap form .row {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
   }
 }
