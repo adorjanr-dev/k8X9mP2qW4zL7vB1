@@ -16,6 +16,9 @@ span, input, textarea, button, select {
   font: inherit;
   color: inherit;
 }
+textarea {
+  resize: vertical;
+}
 button {
   border: none;
 }

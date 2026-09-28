@@ -116,6 +116,73 @@
   }
 }
 
+section#faq {
+  margin-top: 4.25rem;
+
+  .title {
+    margin-bottom: 1.625rem;
+    p { font-size: 16px; color: var(--neutral-200); } 
+  }
+
+  .container {
+    background-color: var(--black-600);
+    border-radius: 26px;
+    padding: 1rem 16px;
+
+    div + div {
+      margin-top: 1rem;
+    }
+    > div:not(:last-child) {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        left: 0;
+        top: calc(100% + .5rem);
+        height: 3px;
+        background-color: var(--black-500);
+      }
+    }
+
+    .q {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      cursor: pointer;
+      padding-block: 1rem;
+
+      p {
+        font-size: 1.125rem;
+        margin: 0;
+        font-family: 'Libre Baskerville', serif;
+      }
+
+      p, img { transition: 200ms; }
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .a {
+      display: none;
+      margin-top: 0;
+      font-size: 1rem;
+    }
+  }
+
+  @media (width > 54em) {
+    margin-top: 6.875rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+
+    .title { margin-top: 26px; }
+  }
+}
+
 #kapcsolat {
   margin-top: 4.25rem;
   padding: 2.625rem 16px 1.625rem;

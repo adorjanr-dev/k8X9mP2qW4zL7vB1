@@ -9,6 +9,7 @@ section { margin-top: 4.25rem; }
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 26px;
+    cursor: pointer;
     &.a1-2 { aspect-ratio: 1 / 2; }
   }
   p {

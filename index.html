@@ -145,6 +145,72 @@
       </div>
     </section>
 
+    <section id="faq">
+      <div class="title">
+        <span class="kicker">GYIK</span>
+        <h2>Gyakran ismételt <span class="hl h-under">kérdések</span></h2>
+        <p>Kérdése van? Összefoglaltuk, amit a legtöbben kérdeznek cégünkről és szolgáltatásainkról. Nem találja, amit keres? Hívjon minket, szívesen segítünk!</p>
+      </div>
+      <div class="container">
+        <div>
+          <div class="q">
+            <p>Mivel foglalkozik a Paradis Kft.?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">Fő profilunk a komplex ipari és épületgépészeti hőszigetelő szerkezetek kialakítása a hozzá kapcsolódó munkákkal együtt, például korrózióvédelemmel és állványozással.</p>
+        </div>
+        <div>
+          <div class="q">
+            <p>Milyen szolgáltatásokat kínáltok?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">Melegszigetelést, hidegszigetelést, hangszigetelést, tűzvédelmi szigeteléseket, ipari lemezburkolást, állványozási és korrózióvédelmi munkákat, valamint szigetelőanyag-kereskedelmet.</p>
+        </div>
+        <div>
+          <div class="q">
+            <p>Hol végeztek munkát?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">Székhelyünk Debrecenben van (Balmazújvárosi út 10.), de építőipari kivitelezési munkákat Magyarország egész területén és külföldön egyaránt végzünk.</p>
+        </div>
+        <div>
+          <div class="q">
+            <p>Milyen területeken dolgoztok?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">Épületgépészeti hőszigetelést végzünk többek között bevásárlóközpontokban, irodaházakban, kórházakban és szállodákban. Technológiai hőszigetelést erőművekben, az olaj- és gáziparban, vegyipari üzemekben, gyógyszergyárakban, az élelmiszeriparban, az autóiparban és hűtőházakban.</p>
+        </div>
+        <div>
+          <div class="q">
+            <p>Milyen anyagokkal dolgoztok?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">Ismert gyártók anyagait használjuk, például a Rockwool, Armacell, Kaiflex és Promat termékeit.</p>
+        </div>
+        <div>
+          <div class="q">
+            <p>Mi garantálja a minőségi végeredményt?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">ISO 9002 minőségbiztosítási rendszer, 30+ év tapasztalat, képzett szakemberek és ismert gyártók anyagai. Munkáinkat hazai és külföldi referenciák igazolják.</p>
+        </div>
+        <div>
+          <div class="q">
+            <p>Milyen elvek szerint dolgoztok?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">Célunk hőhídmentes, energiacsökkentő és környezetbarát rendszerek létrehozása korszerű anyagokkal és technológiákkal, a megrendelő igénye szerint.</p>
+        </div>
+        <div>
+          <div class="q">
+            <p>Megnézhetem korábbi munkáitokat?</p>
+            <img src="/_assets/arrow-down-white.svg" alt="">
+          </div>
+          <p class="a">Igen, hazai és külföldi referenciáinkat, valamint fotógalériánkat a Referenciák menüpontban találja.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="kapcsolat">
       <div class="grid-wrapper">
         <div class="title">
@@ -200,6 +266,25 @@
   <script>
     const navToggle = document.querySelector('[aria-controls="mobile-navigation"]');
     navToggle.addEventListener('click', () => { navToggle.ariaExpanded = !(navToggle.ariaExpanded == 'true'); });
+
+    let questions = document.querySelectorAll('#faq .q');
+    questions.forEach(e => {
+      e.addEventListener('click', () => {
+        let answerDisplay = e.nextElementSibling.style.display;
+        let qIcon = e.children[1];
+        let qText = e.children[0];
+
+        if (answerDisplay) {
+          e.nextElementSibling.style.display = '';
+          qIcon.style.transform = 'rotate(0deg)';
+          qText.style.cssText = "color: white !important";
+        } else {
+          e.nextElementSibling.style.display = 'block';
+          qIcon.style.transform = 'rotate(180deg)';
+          qText.style.cssText = "color: var(--primary-600) !important";
+        }
+      })
+    });
   </script>
 </body>
 </html>

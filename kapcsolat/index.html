@@ -73,37 +73,47 @@
     </section>
 
     <section id="urlap">
-      <h2>Kapcsolat <span class="hl h-under">űrlap</span></h2>
+      <h2>Kapcsolati <span class="hl h-under">űrlap</span></h2>
       <form action="" method="POST">
-        <div class="nev">
-          <label for="nev">Név:</label>
-          <input type="text" name="nev" id="nev">
+        <div class="row">
+          <div class="nev">
+            <label for="nev">Név</label>
+            <input type="text" name="nev" id="nev" placeholder="Kovács Ferenc">
+          </div>
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="ferenc@example.com">
+          </div>
         </div>
-        <div class="email">
-          <label for="email">E-mail:</label>
-          <input type="email" name="email" id="email">
+        <div class="row">
+          <div class="iranyitoszam">
+            <label for="iranyitoszam">Irányítószám</label>
+            <input type="text" name="iranyitoszam" id="iranyitoszam">
+          </div>
+          <div class="varos">
+            <label for="varos">Város</label>
+            <input type="text" name="varos" id="varos">
+          </div>
         </div>
-        <div class="iranyitoszam">
-          <label for="iranyitoszam">Irányítószám:</label>
-          <input type="text" name="iranyitoszam" id="iranyitoszam">
-        </div>
-        <div class="varos">
-          <label for="varos">Város:</label>
-          <input type="text" name="varos" id="varos">
-        </div>
-        <div class="cim">
-          <label for="cim">Utca, házszám</label>
-          <input type="text" name="cim" id="cim">
-        </div>
-        <div class="telefonszam">
-          <label for="telefonszam">Telefonszám:</label>
-          <input type="tel" name="telefonszam" id="telefonszam">
+        <div class="row">
+          <div class="cim">
+            <label for="cim">Utca, házszám</label>
+            <input type="text" name="cim" id="cim">
+          </div>
+          <div class="telefonszam">
+            <label for="telefonszam">Telefonszám</label>
+            <input type="tel" name="telefonszam" id="telefonszam">
+          </div>
         </div>
         <div class="uzenet">
-          <label for="uzenet">Üzenet:</label>
-          <textarea name="uzenet" id="uzenet"></textarea>
+          <label for="uzenet">Üzenet</label>
+          <textarea name="uzenet" id="uzenet" placeholder="Miben segíthetünk?"></textarea>
         </div>
-        <button class="btn-primary btn-sm">Küldés</button>
+        <div class="adatkez">
+          <input type="checkbox" name="adatkez" id="adatkez">
+          <label for="adatkez">Hozzájárulok az adataim kezeléséhez.</label>
+        </div>
+        <button class="btn-primary btn-sm">Kapcsolat felvétele</button>
       </form>
     </section>
   </main>

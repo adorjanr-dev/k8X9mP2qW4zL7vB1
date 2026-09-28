@@ -48,12 +48,80 @@
   </header>
 
   <main>
-    <section class="hero-sm">
-      <span class="kicker">PARADIS KFT.</span>
-      <h1>Karrier</h1>
+    <section id="hero" class="col-1 center full-width">
+      <div class="content">
+        <span class="kicker">PARADIS KFT.</span>
+        <h1 class="headline">Építsd velünk a <span class="hl">jövőt</span></h1>
+        <p class="description">1991 óta dolgozunk komplex ipari és épületgépészeti szigetelési projekteken itthon és külföldön. Csatlakozz képzett szakembergárdánkhoz!</p>
+        <div class="buttons">
+          <a href="#poziciok" class="button btn-primary">Nyitott pozíciók <span class="arrow">&#8595;</span></a>
+        </div>
+      </div>
+      </div>
     </section>
 
-    <section class="placeholder" style="height: 20vh;"></section>
+    <section id="poziciok">
+      <div class="title">
+        <span class="kicker">NYITOTT POZÍCIÓK</span>
+        <h2>Válaszd ki a <span class="hl h-under">sajátodat</span></h2>
+      </div>
+      <div class="cards">
+        <a href="#jelentkezz">
+          <div class="card">
+            <p>Első pozíció</p>
+            <span href="">Jelentkezem &#8594;</span>
+          </div>
+        </a>
+        <a href="#jelentkezz">
+          <div class="card">
+            <p>Második pozíció</p>
+            <span href="">Jelentkezem &#8594;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="jelentkezz">
+      <div class="title">
+        <span class="kicker">JELENTKEZZ</span>
+        <h2>Küldd el <span class="hl h-under">pár sorban</span></h2>
+        <p>Nem kell motivációs levél. A munkáid és három mondat rólad többet mond.</p>
+      </div>
+      <form action="">
+        <div class="row">
+          <div class="nev">
+            <label for="nev">Név</label>
+            <input type="text" name="nev" id="nev" placeholder="Kovács Ferenc">
+          </div>
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="ferenc@example.com">
+          </div>
+        </div>
+        <div class="row">
+          <div class="pozicio">
+            <label for="pozicio">Pozíció</label>
+            <select name="pozicio" id="pozicio">
+              <option value="elso-pozicio">Első pozíció</option>
+              <option value="masodik-pozicio">Második pozíció</option>
+            </select>
+          </div>
+          <div class="portfolio">
+            <label for="portfolio">Portfólió vagy LinkedIn</label>
+            <input type="text" name="portfolio" id="portfolio" placeholder="linkedin.com/in/...">
+          </div>
+        </div>
+        <div class="leiras">
+          <label for="leiras">Három mondat rólad</label>
+          <textarea name="leiras" id="leiras" placeholder="Min dolgoztál eddig, és mik az erősségeid?"></textarea>
+        </div>
+        <div class="adatkez">
+          <input type="checkbox" name="adatkez" id="adatkez">
+          <label for="adatkez">Hozzájárulok az adataim kezeléséhez.</label>
+        </div>
+        <button class="btn-primary btn-sm">Jelentkezés elküldése</button>
+      </form>
+    </section>
   </main>
 
   <footer>
