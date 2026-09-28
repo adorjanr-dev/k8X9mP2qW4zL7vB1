@@ -1,0 +1,201 @@
+#hero {
+  position: relative;
+  min-height: 100svh;
+  
+  &::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background:
+      linear-gradient(to bottom, #00000080 20%, transparent),
+      url("./../_assets/gallery//romania-impex-dej.jpg");
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(65%) opacity(95%);
+  }
+}
+
+#mivel-foglalkozunk {
+  margin-top: 4.25rem;
+
+  h2 { text-align: center; }
+
+  .cards {
+    margin-top: 2.625rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    & > * {
+      border-radius: 26px;
+      background-color: var(--black-600);
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+
+      .title { display: flex; align-items: center; gap: 12px; }
+      img {
+        --mf-img-height: 1.8rem;
+        --mf-img-pad: 8px;
+
+        --mf-img-size: calc(var(--mf-img-height) + 2 * var(--mf-img-pad));
+        height: var(--mf-img-size);
+        width: var(--mf-img-size);
+        background-color: var(--primary-200);
+        padding: var(--mf-img-pad);
+        border-radius: 12px;
+      }
+      p {
+        font-size: 1rem; /* ignores @media */
+        line-height: 1.35;
+        color: var(--neutral-300);
+        margin: .8rem 0 0 .2ch;
+        padding-top: .4rem;
+        border-top: 1px solid hsl(0, 0%, 30%);
+      }
+    }
+  }
+}
+
+#rolunk {
+  margin-top: 4.25rem;
+  .title { text-align: center; }
+  .content { margin-top: 2.625rem; }
+  img { aspect-ratio: 2 / 1; object-fit: cover; border-radius: 26px; }
+}
+
+#referenciak {
+  margin-top: 4.25rem;
+
+  .marquee {
+    --marquee-gap: 26px;
+
+    margin-top: 3.125rem;
+
+    display: flex;
+    gap: var(--marquee-gap);
+  
+    overflow: hidden;
+    user-select: none;
+  
+    ul {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--marquee-gap);
+
+      li:nth-child(even) { width: 140px; }
+      li:nth-child(odd) { width: 180px; }
+  
+      img {
+        border-radius: 26px;
+        border: 3px solid var(--black-700);
+      }
+
+      animation: marquee 60s linear infinite;
+    }
+
+    &:hover ul { animation-play-state: paused; }
+
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background:
+        linear-gradient(to left, transparent 90%, var(--black-400)),
+        linear-gradient(to right, transparent 90%, var(--black-400));
+    }
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(calc(-100% - var(--marquee-gap)));
+  }
+}
+
+#kapcsolat {
+  margin-top: 4.25rem;
+  padding: 2.625rem 16px 1.625rem;
+  border-radius: 42px;
+  background-color: var(--black-500);
+  .details { margin-top: 1.625rem; }
+  p { font-size: .875rem; margin: 0rem; }
+  .email, .cim { margin-top: .625rem; }
+  .button { margin-top: 1rem; }
+}
+
+/* BOX-SHADOW */
+#hero,
+#mivel-foglalkozunk .cards > *,
+#rolunk img,
+#referenciak img,
+#kapcsolat {
+  box-shadow: 0 0 8px 0 var(--neutral-900);
+}
+#mivel-foglalkozunk .cards > * {
+  transition: box-shadow 200ms, background-color 200ms;
+  &:hover {
+    box-shadow: 0 0 8px 2px var(--neutral-950);
+    background-color: var(--black-700);
+  }
+}
+/* box-shadow */
+
+@media (width > 30em) {
+  #kapcsolat p {
+    font-size: 1rem;
+  }
+  #referenciak .marquee {
+    ul li:nth-child(even) { width: 180px; }
+    ul li:nth-child(odd) { width: 220px; }
+  }
+}
+
+@media (width > 48em) {
+  #hero .buttons {
+    flex-direction: row;
+    .button { margin-inline: 0; }
+  }
+  #mivel-foglalkozunk .cards { grid-template-columns: 1fr 1fr; }
+  #rolunk {
+    img { aspect-ratio: auto; height: 100%; }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+
+      .text { display: flex; flex-direction: column; justify-content: space-between; padding-block: 2.625rem; }
+      .paragraphs p { margin-top: .625rem; }
+      .button { margin-top: 1.625rem; max-width: max-content; }
+    }
+  }
+  #referenciak {
+    .content { text-align: center; }
+    .marquee {
+      ul li:nth-child(even) { width: 220px; }
+      ul li:nth-child(odd) { width: 280px; }
+    }
+  }
+  #kapcsolat {
+    padding: 4.25rem 26px 2.625rem;
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+    .details { margin-top: 0; }
+  }
+}
+
+@media (width > 75em) {
+  #mivel-foglalkozunk {
+    margin-top: 6.875rem;
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  #rolunk, #referenciak, #kapcsolat { margin-top: 6.875rem; }
+}

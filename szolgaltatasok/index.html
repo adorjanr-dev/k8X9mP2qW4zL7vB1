@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradis - Szolgáltatások</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../_styles/framework.css">
+  <link rel="stylesheet" href="./../_styles/general.css">
+  <link rel="stylesheet" href="./../_styles/szolgaltatasok.css">
+</head>
+<body>
+  <header>
+    <a href="./../"><img src="./../_assets/site_logo.png" alt="Paradis logo"></a>
+
+    <div class="desktop-view">
+      <nav id="desktop-navigation">
+        <ul>
+          <li><a href="./../rolunk/">Rólunk</a></li>
+          <li><a href="./../szolgaltatasok/" class="active">Szolgáltatások</a></li>
+          <li><a href="./../referenciak/">Referenciák</a></li>
+          <li><a href="./../karrier/">Karrier</a></li>
+          <li><a href="./../kapcsolat/" class="button btn-primary btn-sm">Kapcsolat <span class="arrow">&#8594;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-view">  
+      <button aria-controls="mobile-navigation" aria-expanded="false">
+        <svg class="menu-icon" viewbox="0 0 26 26" width="26">
+          <rect class="top" width="26" height="2" rx="1" y="4" fill="#FFFFFF" />
+          <rect class="mid" width="26" height="2" rx="1" y="12" fill="#FFFFFF" />
+          <rect class="bot" width="26" height="2" rx="1" y="20" fill="#FFFFFF" />
+        </svg>
+      </button>
+      <nav id="mobile-navigation">
+        <ul>
+          <li><a href="./../rolunk/">Rólunk</a></li>
+          <li><a href="./../szolgaltatasok/" class="active">Szolgáltatások</a></li>
+          <li><a href="./../referenciak/">Referenciák</a></li>
+          <li><a href="./../karrier/">Karrier</a></li>
+          <li><a href="./../kapcsolat/">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="col-1 center full-width">
+      <div class="content">
+        <span class="kicker">PARADIS KFT.</span>
+        <h1 class="headline">Szigetelés, <span class="hl">minden</span> területre</h1>
+        <p class="description">Melegszigeteléstől a tűzvédelemig – teljes körű szigetelési szolgáltatások épületgépészeti és ipari technológiai rendszerekhez.</p>
+        <div class="buttons">
+          <a href="#mivel-foglalkozunk" class="button btn-primary">Tudj meg többet <span class="arrow">&#8595;</span></a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="mivel-foglalkozunk">
+      <h2>Mivel <span class="hl h-under">foglalkozunk?</span></h2>
+      <div class="cards">
+        <div>
+          <div class="title">
+            <img src="./../_assets/sun.svg" alt="nap ikon">
+            <h3>Melegszigetelés</h3>
+          </div>
+          <p>Ipari csővezetékek és berendezések hőszigetelése a hatékony, energiatakarékos üzemeltetésért.</p>
+        </div>
+        <div>
+          <div class="title">
+            <img src="./../_assets/snowflake.svg" alt="hó ikon">
+            <h3>Hidegszigetelés</h3>
+          </div>
+          <p>Hűtött rendszerek és tartályok szigetelése a páralecsapódás és hőveszteség ellen.</p>
+        </div>
+        <div>
+          <div class="title">
+            <img src="./../_assets/volume_off.svg" alt="hangszóró ikon">
+            <h3>Hangszigetelés</h3>
+          </div>
+          <p>Zajcsökkentő megoldások ipari és épületgépészeti környezetben, a nyugodtabb munkakörülményekért.</p>
+        </div>
+        <div>
+          <div class="title">
+            <img src="./../_assets/fire.svg" alt="tűz ikon">
+            <h3>Tűzvédelem</h3>
+          </div>
+          <p>Tűzálló szigetelőrendszerek, amelyek védik az épületet, a berendezést és az embereket.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="teruletek">
+      <div class="title">
+        <span class="kicker">TERÜLETEK</span>
+        <h2>Iparági területek, ahol <span class="hl h-under">otthon</span> vagyunk</h2>
+      </div>
+      <div class="content">
+        <div class="count">
+          <h2>15+</h2>
+          <p>iparági terület</p>
+        </div>
+        <div class="epulet">
+          <h3>Épületgépészeti hőszigetelések</h3>
+          <ul>
+            <li><span class="list-icon">+</span><span class="list-item">Bevásárlóközpontok, áruházak</span></li>
+            <li><span class="list-icon">+</span> Irodaházak, bankok</li>
+            <li><span class="list-icon">+</span> Intézmények, színházak, középületek</li>
+            <li><span class="list-icon">+</span> Kórházak</li>
+            <li><span class="list-icon">+</span> Éttermek, szállodák</li>
+          </ul>
+        </div>
+        <div class="tech">
+          <h3>Technológiai hőszigetelések</h3>
+          <ul>
+            <li><span class="list-icon">+</span> Hagyományos erőművek, atomerőművek</li>
+            <li><span class="list-icon">+</span> Olaj- és gázipar</li>
+            <li><span class="list-icon">+</span> Vegyipari üzemek és berendezések</li>
+            <li><span class="list-icon">+</span> Gyógyszergyárak</li>
+            <li><span class="list-icon">+</span> Élelmiszeripar</li>
+            <li><span class="list-icon">+</span> Autóipar</li>
+            <li><span class="list-icon">+</span> Hűtőházak</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="kapcsolat">
+      <div class="grid-wrapper">
+        <div class="title">
+          <span class="kicker">KAPCSOLAT</span>
+          <h2>Lépj Velünk <span class="hl h-under">kapcsolatba!</span></h2>
+        </div>
+        <div class="details">
+          <div class="tel">
+            <p>Telefon: +36 (52) 534-076</p>
+            <p>Mobiltelefon: +36 (30) 9530-574</p>
+          </div>
+          <div class="email">
+            <p>E-mail: <a href="mailto:jakob@paradiskft.t-online.hu">jakob@paradiskft.t-online.hu</a></p>
+          </div>
+          <div class="cim">
+            <p>4002 Debrecen, Balmazújváros út 10.</p>
+          </div>
+          <a href="./../kapcsolat/" class="button btn-primary btn-sm">Részletek <span class="arrow">&#8594;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="ceg-info">
+      <img src="./../_assets/site_logo.png" alt="Paradis logo">
+      <p>Komplex ipari és épületgépészeti szigetelő rendszerek kivitelezése, Magyarország egész területén és külföldön egyaránt. Bízza szakértő csapatunkra projektje szigetelését!</p>
+    </div>
+    <div class="col-2">
+      <div class="navigation">
+        <h2 class="alt">Navigáció</h2>
+        <nav>
+          <a href="./../">Kezdőlap</a>
+          <a href="./../rolunk/">Rólunk</a>
+          <a href="./../szolgaltatasok/">Szolgáltatások</a>
+          <a href="./../referenciak/">Referenciák</a>
+          <a href="./../karrier/">Karrier</a>
+          <a href="./../kapcsolat/">Kapcsolat</a>
+        </nav>
+      </div>
+      <div class="contact">
+        <h2 class="alt">Elérhetőség</h2>
+        <div class="nav">
+          <p>Telefon: +36 (52) 534-076</p>
+          <p>Mobiltelefon: +36 (30) 9530-574</p>
+          <p><a href="mailto:jakob@paradiskft.t-online.hu">E-mail: jakob@paradiskft.t-online.hu</a></p>
+        </div>
+      </div>
+    </div>
+    <p class="copy">&copy; Paradis Kft. 2026. Minden jog fenntartva.</p>
+  </footer>  
+
+  <script>
+    const navToggle = document.querySelector('[aria-controls="mobile-navigation"]');
+    navToggle.addEventListener('click', () => { navToggle.ariaExpanded = !(navToggle.ariaExpanded == 'true'); });
+  </script>
+</body>
+</html>

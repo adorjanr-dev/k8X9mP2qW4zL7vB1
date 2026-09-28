@@ -1,0 +1,101 @@
+main { margin-top: 6rem; }
+
+section {
+  margin-top: 4.25rem;
+  .card {
+    margin-top: 1.625rem;
+    padding: 16px;
+    background-color: var(--black-600);
+    border-radius: 26px;
+  }
+}
+
+#galeria {
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    img { border-radius: 10px; filter: brightness(90%); }
+  }
+  a { margin-top: 1rem; }
+}
+
+#magyar, #kulfoldi {
+  h3 { font-size: 2.125rem; }
+  ul { margin-top: .625rem; }
+  li {
+    margin-top: .625rem;
+    padding-top: .625rem;
+    border-top: 2px solid var(--black-500);
+  }
+  li { font-size: .875rem; }
+  .card { border: 4px solid var(--black-600); }
+  .card:nth-child(even) { background-color: transparent; }
+}
+
+#kapcsolat {
+  margin-top: 4.25rem;
+  padding: 2.625rem 16px 1.625rem;
+  border-radius: 42px;
+  background-color: var(--black-500);
+  .details { margin-top: 1.625rem; }
+  p { font-size: .875rem; margin: 0rem; }
+  .email, .cim { margin-top: .625rem; }
+  .button { margin-top: 1rem; }
+}
+
+.card,
+#galeria img,
+#kapcsolat {
+  box-shadow: 0 0 8px 0 var(--neutral-900);
+}
+
+@media (width > 30em) {
+  #kapcsolat p { font-size: 1rem; }
+}
+
+@media (width > 48em) {
+  #galeria {
+    .card { padding: 20px; }
+    .card .imgs { flex-direction: row; }
+    img { width: calc((100% - 2 * 16px) / 3); }
+  }
+
+  #magyar, #kulfoldi {
+    .ref-container {
+      margin-top: 1.625rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+
+      .card { margin-top: 0; }
+      .card.ev-2007 { height: fit-content; }
+    }
+  }
+
+  #kapcsolat {
+    padding: 4.25rem 26px 2.625rem;
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+    .details { margin-top: 0; }
+  }
+}
+
+@media (width > 75em) {
+  #magyar, #kulfoldi {
+    .ref-container {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .card.span-3 {
+        grid-column-end: span 3;
+        .long-list { display: flex; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 56px; }
+      }
+    }
+  }
+
+  #kapcsolat { margin-top: 6.875rem; }
+}

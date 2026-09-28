@@ -1,0 +1,148 @@
+#hero {
+  background: linear-gradient(to bottom, var(--black-200), var(--black-500));
+}
+
+#mivel-foglalkozunk {
+  margin-top: 4.25rem;
+
+  h2 { text-align: center; }
+
+  .cards {
+    margin-top: 2.625rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    & > * {
+      border-radius: 26px;
+      background-color: var(--black-600);
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+
+      .title { display: flex; align-items: center; gap: 12px; }
+      img {
+        --mf-img-height: 1.8rem;
+        --mf-img-pad: 8px;
+
+        --mf-img-size: calc(var(--mf-img-height) + 2 * var(--mf-img-pad));
+        height: var(--mf-img-size);
+        width: var(--mf-img-size);
+        background-color: var(--primary-200);
+        padding: var(--mf-img-pad);
+        border-radius: 12px;
+      }
+      p {
+        font-size: 1rem; /* ignores @media */
+        line-height: 1.35;
+        color: var(--neutral-300);
+        margin: .8rem 0 0 .2ch;
+        padding-top: .4rem;
+        border-top: 1px solid hsl(0, 0%, 30%);
+      }
+
+      transition: box-shadow 200ms, background-color 200ms;
+      &:hover {
+        box-shadow: 0 0 8px 2px var(--neutral-950);
+        background-color: var(--black-700);
+      }
+    }
+  }
+}
+
+#teruletek {
+  margin-top: 2.625rem;
+
+  .title { text-align: center; }
+  .content { margin-top: 1.625rem; }
+  .count {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem 16px;
+    max-width: max-content;
+    h2 { font-size: 2.125rem; }
+    p { line-height: 1.2; }
+    > * { margin: 0; }
+
+    background: linear-gradient(110deg, hsl(from var(--primary-400) h s l / .6), hsl(from var(--primary-200) h s l / .7));
+    border: 2px solid var(--primary-300);
+    border-radius: 26px;
+  }
+
+  .epulet, .tech {
+    border: 4px solid var(--black-600);
+    border-radius: 26px;
+    margin-top: 1.125rem;
+    padding: 1.625rem 16px;
+    ul { margin-top: 1.125rem; }
+    li { display: flex; align-items: center; gap: 12px; margin-top: .625rem; }
+    .list-icon {
+      background-color: var(--primary-300);
+      display: grid;
+      place-items: center;
+      border-radius: 99px;
+      height: 1.625rem; width: 1.625rem;
+      font-weight: 700;
+    }
+  }
+  .epulet { background-color: var(--black-600); }
+}
+
+#kapcsolat {
+  margin-top: 4.25rem;
+  padding: 2.625rem 16px 1.625rem;
+  border-radius: 42px;
+  background-color: var(--black-500);
+  .details { margin-top: 1.625rem; }
+  p { font-size: .875rem; margin: 0rem; }
+  .email, .cim { margin-top: .625rem; }
+  .button { margin-top: 1rem; }
+}
+
+#hero,
+#mivel-foglalkozunk .cards > *,
+#kapcsolat {
+  box-shadow: 0 0 8px 0 var(--neutral-900);
+}
+
+@media (width > 30em) {
+  #teruletek .count h2 { font-size: 2.375rem; }
+  #kapcsolat p { font-size: 1rem; }
+}
+
+@media (width > 48em) {
+  #mivel-foglalkozunk .cards { grid-template-columns: 1fr 1fr; }
+  #kapcsolat {
+    padding: 4.25rem 26px 2.625rem;
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+    .details { margin-top: 0; }
+  }
+}
+
+@media (width > 75rem) {
+  #mivel-foglalkozunk {
+    margin-top: 6.875rem;
+    .cards { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  }
+  #teruletek {
+    margin-top: 6.875rem;
+    .content {
+      margin-top: 2.625rem;
+      display: grid;
+      grid-template-columns: 2fr 3fr 3fr;
+      gap: 26px;
+
+      > * { margin-top: 0; }
+      .count {
+        max-width: 100%;
+        max-height: fit-content;
+      }
+    }
+  }
+  #kapcsolat { margin-top: 6.875rem; }
+}
