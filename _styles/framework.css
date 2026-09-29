@@ -126,14 +126,18 @@ header {
       }
     }
 
-    rect { transition: y 200ms 200ms ease-out, transform 200ms ease-in, opacity 0ms 200ms; transform-origin: center; }
+    rect {
+      transition: translate 200ms 200ms ease-out, rotate 200ms ease-in, opacity 0ms 200ms;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
   }
 
   &:has(button[aria-expanded="true"]) {
-    rect.top { transform: rotate(-45deg); }
+    rect.top { translate: 0 8px; rotate: -45deg; }
     rect.mid { opacity: 0; }
-    rect.bot { transform: rotate(45deg); }
-    rect { y: 12; transition: y 200ms ease-in, transform 200ms 200ms ease-out, opacity 0ms 200ms; transform-origin: center; }
+    rect.bot { translate:  0 -8px; rotate: 45deg; }
+    rect { transition: translate 200ms ease-in, rotate 200ms 200ms ease-out, opacity 0ms 200ms; }
 
     background-color: var(--neutral-100);
     transition: background-color 0ms 0ms;
