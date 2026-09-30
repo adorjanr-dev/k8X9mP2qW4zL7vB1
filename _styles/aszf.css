@@ -1,0 +1,26 @@
+main { margin-top: 6rem; }
+
+section { margin-top: 4.25rem; }
+
+#aszf,
+#akt {
+  max-width: 1000px;
+  margin-inline: auto;
+  border-top: 1px solid var(--primary-300);
+  padding-top: 2.625rem;
+}
+#aszf h2,
+#akt h2 {
+  font-size: 2.125rem;
+  margin-block: 1rem;
+  color: var(--neutral-100);
+}
+#aszf p,
+#aszf li,
+#akt p,
+#akt li {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--neutral-300);
+}

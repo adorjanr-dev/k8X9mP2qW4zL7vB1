@@ -127,12 +127,18 @@ footer {
       p { margin: 0; line-height: 1.35; }
     }
   }
-  .copy {
+  .legal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
     font-size: .875rem;
     margin: 1.625rem 0 0;
     padding-top: 1rem;
     border-top: 2px solid var(--neutral-600);
     color: var(--neutral-500);
+    > div { display: flex; gap: 16px; }
   }
 
   p, a { font-size: .875rem; color: var(--neutral-400); }
@@ -185,7 +191,7 @@ button, .button {
       img { margin-inline: 0; }
       p { text-align: left; padding-right: 68px; }
     }
-    .copy { margin-top: 2.625rem; grid-column-end: span 3; }
+    .legal { margin-top: 2.625rem; grid-column-end: span 3; }
   }
 }
 /* queries */
