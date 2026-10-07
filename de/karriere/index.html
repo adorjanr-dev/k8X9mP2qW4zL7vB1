@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paradis - Karriere</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./../../_assets/site_logo-32.png">
+  <meta name="description" content="Werden Sie Teil des Teams der Paradis Kft.! Offene Stellen in Industriedämmprojekten in Debrecen und im ganzen Land.">
+  <!-- <link rel="canonical" href="https://example.com/page/"> -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Paradis - Karriere">
+  <meta property="og:description" content="Werden Sie Teil des Teams der Paradis Kft.! Offene Stellen in Industriedämmprojekten in Debrecen und im ganzen Land.">
+  <!-- <meta property="og:url" content="https://example.com/page/"> -->
+  <!-- <meta property="og:image" content="https://example.com/_assets/site_logo.png"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../../_styles/framework.css">
+  <link rel="stylesheet" href="./../../_styles/general.css">
+  <link rel="stylesheet" href="./../../_styles/karrier.css">
+</head>
+<body>
+  <header>
+    <a href="./../"><img src="./../../_assets/site_logo.png" alt="Paradis Logo"></a>
+
+    <div class="desktop-view">
+      <nav id="desktop-navigation">
+        <ul>
+          <li><a href="./../ueber-uns/">Über uns</a></li>
+          <li><a href="./../leistungen/">Leistungen</a></li>
+          <li><a href="./../referenzen/">Referenzen</a></li>
+          <li><a href="./../karriere/" class="active">Karriere</a></li>
+          <li><a href="./../kontakt/" class="button btn-primary btn-sm">Kontakt <span class="arrow">&#8594;</span></a></li>
+          <li class="langs">
+            <a href="./../../karrier/"><img src="./../../_assets/Flag_of_Hungary.svg" alt="Magyar"></a>
+            <a href="./../../en/careers/"><img src="./../../_assets/Flag_of_the_United_Kingdom.svg" alt="English"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-view">
+      <button aria-controls="mobile-navigation" aria-expanded="false">
+        <svg class="menu-icon" viewbox="0 0 26 26" width="26">
+          <rect class="top" width="26" height="2" rx="1" y="4" fill="#FFFFFF" />
+          <rect class="mid" width="26" height="2" rx="1" y="12" fill="#FFFFFF" />
+          <rect class="bot" width="26" height="2" rx="1" y="20" fill="#FFFFFF" />
+        </svg>
+      </button>
+      <nav id="mobile-navigation">
+        <ul>
+          <li><a href="./../ueber-uns/">Über uns</a></li>
+          <li><a href="./../leistungen/">Leistungen</a></li>
+          <li><a href="./../referenzen/">Referenzen</a></li>
+          <li><a href="./../karriere/" class="active">Karriere</a></li>
+          <li><a href="./../kontakt/">Kontakt</a></li>
+          <li class="langs-mobile">
+            <a href="./../../karrier/"><img src="./../../_assets/Flag_of_Hungary.svg" alt="Magyar"></a>
+            <a href="./../../en/careers/"><img src="./../../_assets/Flag_of_the_United_Kingdom.svg" alt="English"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="col-1 center full-width">
+      <div class="content">
+        <span class="kicker">PARADIS KFT.</span>
+        <h1 class="headline">Bauen Sie mit uns die <span class="hl">Zukunft</span></h1>
+        <p class="description">Seit 1991 arbeiten wir an komplexen Dämmprojekten für Industrie und Gebäudetechnik in Ungarn und im Ausland. Werden Sie Teil unseres Teams aus geschulten Fachkräften!</p>
+        <div class="buttons">
+          <a href="#poziciok" class="button btn-primary">Offene Stellen <span class="arrow">&#8595;</span></a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="poziciok">
+      <div class="title">
+        <span class="kicker">OFFENE STELLEN</span>
+        <h2>Finden Sie <span class="hl h-under">Ihre Rolle</span></h2>
+      </div>
+      <div class="cards">
+        <a href="#jelentkezz">
+          <div class="card">
+            <p>Isolierer (Haustechnik)</p>
+            <span href="">Bewerben &#8594;</span>
+          </div>
+        </a>
+        <a href="#jelentkezz">
+          <div class="card">
+            <p>Industrieklempner</p>
+            <span href="">Bewerben &#8594;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="jelentkezz">
+      <div class="title">
+        <span class="kicker">BEWERBUNG</span>
+        <h2>Schreiben Sie uns <span class="hl h-under">ein paar Zeilen</span></h2>
+        <p>Kein Anschreiben nötig. Ihre Arbeit und drei Sätze über Sie sagen mehr.</p>
+      </div>
+      <form action="">
+        <div class="row">
+          <div class="nev">
+            <label for="nev">Name</label>
+            <input type="text" name="nev" id="nev" placeholder="Max Mustermann">
+          </div>
+          <div class="email">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" placeholder="max@beispiel.de">
+          </div>
+        </div>
+        <div class="row">
+          <div class="pozicio">
+            <label for="pozicio">Stelle</label>
+            <select name="pozicio" id="pozicio">
+              <option value="gepeszeti-szigetelo">Isolierer (Haustechnik)</option>
+              <option value="ipari-badogos">Industrieklempner</option>
+            </select>
+          </div>
+          <div class="portfolio">
+            <label for="portfolio">Portfolio oder LinkedIn</label>
+            <input type="text" name="portfolio" id="portfolio" placeholder="linkedin.com/in/...">
+          </div>
+        </div>
+        <div class="leiras">
+          <label for="leiras">Drei Sätze über Sie</label>
+          <textarea name="leiras" id="leiras" placeholder="Woran haben Sie bisher gearbeitet und was sind Ihre Stärken?"></textarea>
+        </div>
+        <div class="adatkez">
+          <input type="checkbox" name="adatkez" id="adatkez">
+          <label for="adatkez">Ich willige in die Verarbeitung meiner personenbezogenen Daten ein.</label>
+        </div>
+        <button class="btn-primary btn-sm">Bewerbung absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="ceg-info">
+      <img src="./../../_assets/site_logo.png" alt="Paradis Logo">
+      <p>Ausführung komplexer Dämmsysteme für Industrie und Gebäudetechnik in ganz Ungarn und im Ausland. Vertrauen Sie die Dämmung Ihres Projekts unserem Expertenteam an!</p>
+    </div>
+    <div class="col-2">
+      <div class="navigation">
+        <h2 class="alt">Navigation</h2>
+        <nav>
+          <a href="./../">Startseite</a>
+          <a href="./../ueber-uns/">Über uns</a>
+          <a href="./../leistungen/">Leistungen</a>
+          <a href="./../referenzen/">Referenzen</a>
+          <a href="./../karriere/">Karriere</a>
+          <a href="./../kontakt/">Kontakt</a>
+        </nav>
+      </div>
+      <div class="contact">
+        <h2 class="alt">Kontaktdaten</h2>
+        <div class="nav">
+          <p>Telefon: +36 (52) 534-076</p>
+          <p>Mobil: +36 (30) 9530-574</p>
+          <p><a href="mailto:jakob@paradiskft.t-online.hu">E-Mail: jakob@paradiskft.t-online.hu</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <p class="copy">&copy; Paradis Kft. 2026. Alle Rechte vorbehalten.</p>
+      <div>
+        <a href="./../../aszf">AGB</a>
+        <a href="./../../adatkezelesi-tajekoztato">Datenschutzerklärung</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('[aria-controls="mobile-navigation"]');
+    navToggle.addEventListener('click', () => { navToggle.ariaExpanded = !(navToggle.ariaExpanded == 'true'); });
+  </script>
+</body>
+</html>

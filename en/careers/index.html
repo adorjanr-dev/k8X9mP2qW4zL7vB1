@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paradis - Careers</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./../../_assets/site_logo-32.png">
+  <meta name="description" content="Join the Paradis Kft. team! Open positions on industrial insulation projects in Debrecen and across the country.">
+  <!-- <link rel="canonical" href="https://example.com/page/"> -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Paradis - Careers">
+  <meta property="og:description" content="Join the Paradis Kft. team! Open positions on industrial insulation projects in Debrecen and across the country.">
+  <!-- <meta property="og:url" content="https://example.com/page/"> -->
+  <!-- <meta property="og:image" content="https://example.com/_assets/site_logo.png"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../../_styles/framework.css">
+  <link rel="stylesheet" href="./../../_styles/general.css">
+  <link rel="stylesheet" href="./../../_styles/karrier.css">
+</head>
+<body>
+  <header>
+    <a href="./../"><img src="./../../_assets/site_logo.png" alt="Paradis logo"></a>
+
+    <div class="desktop-view">
+      <nav id="desktop-navigation">
+        <ul>
+          <li><a href="./../about-us/">About us</a></li>
+          <li><a href="./../services/">Services</a></li>
+          <li><a href="./../references/">References</a></li>
+          <li><a href="./../careers/" class="active">Careers</a></li>
+          <li><a href="./../contact/" class="button btn-primary btn-sm">Contact <span class="arrow">&#8594;</span></a></li>
+          <li class="langs">
+            <a href="./../../karrier/"><img src="./../../_assets/Flag_of_Hungary.svg" alt="Magyar"></a>
+            <a href="./../../de/karriere/"><img src="./../../_assets/Flag_of_Germany.svg" alt="Deutsch"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-view">
+      <button aria-controls="mobile-navigation" aria-expanded="false">
+        <svg class="menu-icon" viewbox="0 0 26 26" width="26">
+          <rect class="top" width="26" height="2" rx="1" y="4" fill="#FFFFFF" />
+          <rect class="mid" width="26" height="2" rx="1" y="12" fill="#FFFFFF" />
+          <rect class="bot" width="26" height="2" rx="1" y="20" fill="#FFFFFF" />
+        </svg>
+      </button>
+      <nav id="mobile-navigation">
+        <ul>
+          <li><a href="./../about-us/">About us</a></li>
+          <li><a href="./../services/">Services</a></li>
+          <li><a href="./../references/">References</a></li>
+          <li><a href="./../careers/" class="active">Careers</a></li>
+          <li><a href="./../contact/">Contact</a></li>
+          <li class="langs-mobile">
+            <a href="./../../karrier/"><img src="./../../_assets/Flag_of_Hungary.svg" alt="Magyar"></a>
+            <a href="./../../de/karriere/"><img src="./../../_assets/Flag_of_Germany.svg" alt="Deutsch"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="col-1 center full-width">
+      <div class="content">
+        <span class="kicker">PARADIS KFT.</span>
+        <h1 class="headline">Build the <span class="hl">future</span> with us</h1>
+        <p class="description">Since 1991 we have been working on complex industrial and building services insulation projects in Hungary and abroad. Join our team of trained professionals!</p>
+        <div class="buttons">
+          <a href="#poziciok" class="button btn-primary">Open positions <span class="arrow">&#8595;</span></a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="poziciok">
+      <div class="title">
+        <span class="kicker">OPEN POSITIONS</span>
+        <h2>Find <span class="hl h-under">your role</span></h2>
+      </div>
+      <div class="cards">
+        <a href="#jelentkezz">
+          <div class="card">
+            <p>Mechanical insulator</p>
+            <span href="">Apply &#8594;</span>
+          </div>
+        </a>
+        <a href="#jelentkezz">
+          <div class="card">
+            <p>Industrial sheet metal worker</p>
+            <span href="">Apply &#8594;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="jelentkezz">
+      <div class="title">
+        <span class="kicker">APPLY</span>
+        <h2>Send us <span class="hl h-under">a few lines</span></h2>
+        <p>No cover letter needed. Your work and three sentences about yourself say more.</p>
+      </div>
+      <form action="">
+        <div class="row">
+          <div class="nev">
+            <label for="nev">Name</label>
+            <input type="text" name="nev" id="nev" placeholder="John Smith">
+          </div>
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="john@example.com">
+          </div>
+        </div>
+        <div class="row">
+          <div class="pozicio">
+            <label for="pozicio">Position</label>
+            <select name="pozicio" id="pozicio">
+              <option value="gepeszeti-szigetelo">Mechanical insulator</option>
+              <option value="ipari-badogos">Industrial sheet metal worker</option>
+            </select>
+          </div>
+          <div class="portfolio">
+            <label for="portfolio">Portfolio or LinkedIn</label>
+            <input type="text" name="portfolio" id="portfolio" placeholder="linkedin.com/in/...">
+          </div>
+        </div>
+        <div class="leiras">
+          <label for="leiras">Three sentences about you</label>
+          <textarea name="leiras" id="leiras" placeholder="What have you worked on so far, and what are your strengths?"></textarea>
+        </div>
+        <div class="adatkez">
+          <input type="checkbox" name="adatkez" id="adatkez">
+          <label for="adatkez">I consent to the processing of my personal data.</label>
+        </div>
+        <button class="btn-primary btn-sm">Submit application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="ceg-info">
+      <img src="./../../_assets/site_logo.png" alt="Paradis logo">
+      <p>Installation of complex industrial and building services insulation systems throughout Hungary and abroad. Entrust the insulation of your project to our expert team!</p>
+    </div>
+    <div class="col-2">
+      <div class="navigation">
+        <h2 class="alt">Navigation</h2>
+        <nav>
+          <a href="./../">Home</a>
+          <a href="./../about-us/">About us</a>
+          <a href="./../services/">Services</a>
+          <a href="./../references/">References</a>
+          <a href="./../careers/">Careers</a>
+          <a href="./../contact/">Contact</a>
+        </nav>
+      </div>
+      <div class="contact">
+        <h2 class="alt">Contact details</h2>
+        <div class="nav">
+          <p>Phone: +36 (52) 534-076</p>
+          <p>Mobile: +36 (30) 9530-574</p>
+          <p><a href="mailto:jakob@paradiskft.t-online.hu">E-mail: jakob@paradiskft.t-online.hu</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <p class="copy">&copy; Paradis Kft. 2026. All rights reserved.</p>
+      <div>
+        <a href="./../../aszf">Terms and Conditions</a>
+        <a href="./../../adatkezelesi-tajekoztato">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('[aria-controls="mobile-navigation"]');
+    navToggle.addEventListener('click', () => { navToggle.ariaExpanded = !(navToggle.ariaExpanded == 'true'); });
+  </script>
+</body>
+</html>

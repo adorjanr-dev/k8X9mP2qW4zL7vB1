@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Főoldal / Home / Startseite -->
+  <url>
+    <loc>https://example.com/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://example.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Rólunk / About us / Über uns -->
+  <url>
+    <loc>https://example.com/rolunk/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/rolunk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/ueber-uns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/rolunk/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/about-us/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/rolunk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/ueber-uns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/rolunk/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/de/ueber-uns/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/rolunk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/ueber-uns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/rolunk/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Szolgáltatások / Services / Leistungen -->
+  <url>
+    <loc>https://example.com/szolgaltatasok/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/szolgaltatasok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/leistungen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/szolgaltatasok/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/services/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/szolgaltatasok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/leistungen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/szolgaltatasok/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://example.com/de/leistungen/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/szolgaltatasok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/leistungen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/szolgaltatasok/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Referenciák / References / Referenzen -->
+  <url>
+    <loc>https://example.com/referenciak/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/referenciak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/references/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/referenzen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/referenciak/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/references/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/referenciak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/references/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/referenzen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/referenciak/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/de/referenzen/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/referenciak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/references/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/referenzen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/referenciak/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Galéria / Gallery / Galerie -->
+  <url>
+    <loc>https://example.com/galeria/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/galeria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/galerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/galeria/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/gallery/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/galeria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/galerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/galeria/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/de/galerie/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/galeria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/galerie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/galeria/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Karrier / Careers / Karriere -->
+  <url>
+    <loc>https://example.com/karrier/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/karrier/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/careers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/karriere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/karrier/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/careers/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/karrier/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/careers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/karriere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/karrier/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://example.com/de/karriere/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/karrier/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/careers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/karriere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/karrier/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Kapcsolat / Contact / Kontakt -->
+  <url>
+    <loc>https://example.com/kapcsolat/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/kapcsolat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/kapcsolat/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/kapcsolat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/kapcsolat/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.com/de/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://example.com/kapcsolat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/kapcsolat/"/>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Jogi oldalak (csak magyarul) -->
+  <url>
+    <loc>https://example.com/aszf/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://example.com/adatkezelesi-tajekoztato/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
