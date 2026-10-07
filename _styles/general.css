@@ -91,6 +91,24 @@ header {
   }
 
   a:not(.button):hover, a.active { color: var(--primary-600); }
+
+  li.langs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    img {
+      height: 1.25rem;
+      border-radius: 6px;
+    }
+  }
+  li.langs-mobile {
+    display: flex;
+    gap: 8px;
+    img {
+      height: 1.25rem;
+      border-radius: 6px;
+    }
+  }
 }
 /* header */
 
